@@ -29,7 +29,7 @@ const zoom = 4;
 const div = display(document.createElement("div"));
 div.style = "height: 400px;";
 const map = L.map(div).setView(center,zoom);
-var layer = protomapsL.leafletLayer({url:'https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=1003762824b9687f',theme:'light'})
+var layer = protomapsL.leafletLayer({url:'https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=7c0c24912bd59a0f',theme:'light'})
 layer.addTo(map);
 ```
 
@@ -53,7 +53,7 @@ Client-side rendered map means we can have... dark mode!
 const div = display(document.createElement("div"));
 div.style = "height: 400px;";
 const map = L.map(div).setView(center,zoom);
-var layer = protomapsL.leafletLayer({url:'https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=1003762824b9687f', theme:'dark'})
+var layer = protomapsL.leafletLayer({url:'https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=7c0c24912bd59a0f', theme:'dark'})
 layer.addTo(map);
 ```
 
@@ -69,7 +69,7 @@ const areas = FileAttachment("data/cb_2018_us_zcta510_500k_nolimit.pmtiles");
 const div = display(document.createElement("div"));
 div.style = "height: 400px;";
 const map = L.map(div).setView(center,zoom);
-var baseLayer = protomapsL.leafletLayer({url:'https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=1003762824b9687f', theme:'black'})
+var baseLayer = protomapsL.leafletLayer({url:'https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=7c0c24912bd59a0f', theme:'black'})
 baseLayer.addTo(map);
 var layer = protomapsL.leafletLayer({url:areas._url, maxDataZoom:7, paintRules: [
   {
@@ -109,7 +109,7 @@ const map = new maplibregl.Map({
   container: div,
   zoom: zoom - 1,
   center: [center[1],center[0]],
-  style: "https://api.protomaps.com/styles/v2/black.json?key=1003762824b9687f"
+  style: "https://api.protomaps.com/styles/v2/black.json?key=7c0c24912bd59a0f"
 })
 
 map.on("load", () => {
